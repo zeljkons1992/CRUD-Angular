@@ -42,8 +42,8 @@ export class AppComponent {
     const dialogRef = this.dialog.open(MyDialogComponent, {
       data:{
         header: "Editovanje",
-        name: jedanRed.cells[0].innerText,
-        lastName: jedanRed.cells[1].innerText
+        name: jedanRed.childNodes[0].textContent,
+        lastName: jedanRed.childNodes[1].textContent,
       }
     });
 
