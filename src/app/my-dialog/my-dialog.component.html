@@ -1,0 +1,17 @@
+<h2 mat-dialog-title>{{header}}</h2>
+<mat-dialog-content>
+  <form class="example-form">
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Ime" value="{{ime}}">
+    </mat-form-field>
+    <p></p>
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Prezime" value="{{prezime}}">
+    </mat-form-field>
+  </form>
+</mat-dialog-content>
+
+<mat-dialog-actions>
+  <button mat-button (click)="cancel()">Cancel</button>
+  <button mat-raised-button color="primary">Save</button>
+</mat-dialog-actions>
